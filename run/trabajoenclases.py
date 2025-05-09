@@ -48,3 +48,8 @@
 #     num=num-1
 
 #clave con intento
+
+#generar un numero aleatorio entre el 1-50
+
+# import random 
+# print(random.randint(1,50))

@@ -63,69 +63,24 @@
 # rai=0
 # cant=int(input("cuántas personas votarán?: "))
 # for i in range (cant):
-#     resp=int(input("por quién votará? 1.ted 2.rai "))
-#     if resp==1:
-#         print("su voto es para ted")
-#         ted+=1
-#     elif resp==2:
-#         print("su voto es para rai")
-#         rai+=1
-#     else:
-#         while resp!=1 or resp!=2:
-#          print("ingrese una opción correcta")
-#          resp=int(input("por quién votará? 1.ted 2.rai "))
-#          if resp==1 or resp==2:
-#           break
-#          if resp==1:
-#           print("su voto es para ted")
-#           ted+=1
-#          else:
-#           resp==2
-#           print("su voto es para rai")
-#           rai+=1  
-# print("los votos de ted son: ", ted)
-# print("los votos de rai son: ", rai)
+#     voto=0
+#     while voto!=1 and voto!=2:
+#         print("1.ted 2.rai")
+#         voto=int(input("ingrese su voto: "))
+#         if voto==1:
+#             ted+=1
+#         elif voto==2:
+#             rai+=1
+#         else:
+#             print("error, ingrese un voto valido")
+# print("los votos de ted son", ted)
+# print("los votos de rai son", rai)
 # if ted>rai:
-#     print("ted gana")
+#     print("ganó ted")
 # elif ted<rai:
-#     print("rai gana")
+#     print("ganó rai")
 # else:
 #     print("empate")
-
- 
-# ted=0
-# rai=0
-# cant=int(input("cuántas personas votarán?: "))
-# for i in range (cant):
-#     resp=int(input("por quién votará? 1.ted 2.rai "))
-#     if resp==1:
-#         print("su voto es para ted")
-#         ted+=1
-#     elif resp==2:
-#         print("su voto es para rai")
-#         rai+=1
-#     else:
-#         while resp!=1 or resp!=2:
-#          print("ingrese una opción correcta")
-#          resp=int(input("por quién votará? 1.ted 2.rai "))
-#          if resp==1 or resp==2:
-#              break 
-#          if resp==1:
-#           print("su voto es para ted")
-#           ted+=1
-#          else:
-#           resp==2
-#           print("su voto es para rai")
-#           rai+=1
-# print("los votos de ted son: ", ted)
-# print("los votos de rai son: ", rai)
-# if ted>rai:
-#     print("ted gana")
-# elif ted<rai:
-#     print("rai gana")
-# else:
-#     print("empate") 
-
 
 
 # Crear un cajero automatico
@@ -271,6 +226,8 @@
 #     print("ha ganado",p1)
 # else:
 #     print("ha ganado",p2)
+
+
     
 
 

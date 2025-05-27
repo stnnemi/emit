@@ -54,4 +54,28 @@
 # import random 
 # print(random.randint(1,50))
 
- 
+#menu de la tarjeta de credito
+
+# import os, sys 
+# while True:
+#     while True:
+#         try:
+#             op=int(input('''
+#                     Seleccione una opción
+#                     1.-
+#                     2.-
+#                     3.-
+#                          '''))
+#             break
+#         except Exception:
+#             print("solo numeros enteros")
+
+
+#     match op:
+#         case 1:
+#             print("1")
+#             sys.exit()
+#         case 2:
+#             print("2")
+#             sys.exit()
+

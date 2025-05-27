@@ -296,7 +296,26 @@
 #      break
 # print("el número es", numadivinar)
 
-
+while True:
+    try:
+        op=int(input('''
+                    Seleccione una opción
+                    1.-
+                    2.-
+                    3.-
+                    '''))
+        match op:
+            case 1:
+                print("1")
+            case 2:
+                print("2")
+            case 3:
+                print("saliendo")
+                break
+            case _:
+                ("opción invalida")
+    except Exception:
+        print("solo números enteros")
         
     
 

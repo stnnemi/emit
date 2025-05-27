@@ -296,32 +296,97 @@
 #      break
 # print("el número es", numadivinar)
 
-while True:
-    try:
-        op=int(input('''
-                    Seleccione una opción
-                    1.-
-                    2.-
-                    3.-
-                    '''))
-        match op:
-            case 1:
-                print("1")
-            case 2:
-                print("2")
-            case 3:
-                print("saliendo")
-                break
-            case _:
-                ("opción invalida")
-    except Exception:
-        print("solo números enteros")
+# while True:
+#     try:
+#         op=int(input('''
+#                     Seleccione una opción
+#                     1.- 1
+#                     2.- 2
+#                     3.- salir
+#                     '''))
+#         match op:
+#             case 1:
+#                 print("1")
+#             case 2:
+#                 print("2")
+#             case 3:
+#                 print("saliendo")
+#                 break
+#             case _:
+#                 ("opción invalida")
+#     except Exception:
+#         print("solo números enteros")
         
-    
+# ## Domingo de pascua ####
+# Preguntar la Cantidad de niños de niños que buscan huevitos de chocolates
+# Cuando se termine la busqueda , preguntar cantos huevos encontró cada uno
+# y clasificarlos de la siguiente forma
+# Menos de una docena : NOOB
+# Entre una docena a 24: Master
+# 25 huevos o mas :Legend
+# Mostrar resumen, y mostrar la mayor cantidad de huevitos encontrados por un solo niño
 
+# import random
+# while True:
+#     try:
+#         cantNiños=int(input("Cuantos niños van a buscar huevitos?  ")) 
+#         while cantNiños<0:
+#             print("Error, solo ingres numeros positivos")
+#             cantNiños=int(input("Cuantos niños van a buscar huevitos?  ")) 
+#         noob=0
+#         master=0
+#         legend=0
+#         top=0
+#         for n in range(cantNiños):
+#             cantHuevos=random.randint(5,30)
+#             if cantHuevos>top:
+#                 top=cantHuevos    
+#             print(f"El niño numero {n+1} encontró {cantHuevos} huevos")
+#             if cantHuevos<12:
+#                 noob+=1
+#             elif cantHuevos>=12 and cantHuevos<=24:
+#                 master+=1
+#             else:
+#                 legend+=1
+#         print("La cant del grupo noob es ", noob)
+#         print("La cant del grupo master es ", master)
+#         print("La cant del grupo legend es ", legend)
+#         print("La mayor cant de huevos encontrada por un niño fue", top)
+#         break
+#     except Exception:
+#         print("Solo numeros enteros")
 
+usuario1=None
+usuario2=None
+usuario3=None
+contraseña1=None
+contraseña2=None
+contraseña3=None
 
+if usuario1==None and usuario2==None and usuario3==None:
+    print("debe tener al menos un usuario")
+else:
+    user=input("ingrese su usuario: ")
+    passw=input("ingrese su contraseña: ")
+    if (user==usuario1 and passw==contraseña1) or (user==usuario2 and passw==contraseña2) or (user==usuario3 and passw==contraseña3):
+        while True:
+            try:
+                op=int(input('''
+                            seleccione una opción
+                            1) Realizar llamada
+                            2) Enviar correo electrónico
+                            3) Cerrar sesión
+                            '''))
+                match op:
+                    case 1:
+                        numcelular=int(input("ingrese su número de celular: "))
+                        #tiene que empezar con un 9 y tamaño de 9 digitos
+                    case 2:
+                        correo=input("ingrese su correo electronico: ")
+                        #tiene que tener un caracter @ validando con un for y while
+                    case 3:
+                        print("cerrando sesión")
+                        break
+            except Exception:
+                print("es necesario registrar un usuario antes")
 
-
-        
-      

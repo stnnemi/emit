@@ -53,3 +53,31 @@
 
 # import random 
 # print(random.randint(1,50))
+
+#clave con 3 intentos
+
+intentos=3
+clave=1234
+
+resp=int(input("ingrese su clave: "))
+while resp!=clave or intentos==0:
+    if resp==clave:
+       print("bienvenido al sistema!")
+    elif intentos==intentos-1:
+       print(f"clave incorrecta, le quedan {intentos} intentos")
+       resp=int(input("ingrese nuevamente su clave: "))
+    else:
+       print("sistema bloqueado")
+       break
+
+    
+
+
+
+
+# print("bievenido a sushi buena pinta")
+# while True:
+#     print("qué roll desea llevar?")
+#     print("roll vegetta")
+#     print("roll willy")
+#     print("roll stax")

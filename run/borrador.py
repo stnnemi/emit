@@ -227,18 +227,99 @@
 # else:
 #     print("ha ganado",p2)
 
+# import random
+# num1=int(input("ingrese un número entero: "))
+# num2=int(input("ingrese un número entero mayor que el primer número: "))
+# while num1>num2:
+#  print("error, siga las instrucciones")
+#  num2=int(input("ingrese un número entero mayor que el primer número: "))
+# numadivinar=random.randint(num1,num2)
+# intento=3
+# resp=int(input(f"intenta adivinar el número entre {num1} y {num2}: "))
+# for i in range(1,3):
+#  while resp!=numadivinar or resp==0:
+#   intento-=1
+#   if numadivinar>resp: 
+#    print("el número es mayor")
+#    resp=int(input(f"te quedan {intento} intentos, intenta adivinar el número: "))
+#   elif numadivinar<resp:
+#    print("el número es menor")
+#    resp=int(input(f"te quedan {intento} intentos, intenta adivinar el número: "))
+#   elif numadivinar==resp:
+#    print("felicitaciones, pudiste adivinar")
+#   break
+# print("el número es", numadivinar)
 
-    
+# sdad1=350000
+# sdae1=280000
+# sdad2=250000
+# sdae2=200000
+# bono=60000
+# edad=40000
+# q=int(input("ingrese su quintil: "))
+# if q==1 or q==2:
+#    print(f"usted recibe un bono adicional de {bono}")
+#    e=int(input("ingrese su condición laboral (1.-empleado 2.-desempleado): "))
+#    if e==1:
+#       total1=sdae1+bono
+#       ed1=int(input("ingrese su edad: "))
+#       if ed1>65:
+#          print(f"por ser mayor de 65 años usted recibe ${edad} extra")
+#          total3=total1+edad
+#          print(f"el valor del subsidio de arriendo es ${total3}")
+#    else:
+#       total2=sdad1+bono
+#       ed2=int(input("ingrese su edad: "))
+#       if ed2>65:
+#           print(f"por ser mayor de 65 años usted recibe ${edad} extra")
+#           total4=total2+edad
+#           print(f"el valor del subsidio de arriendo es ${total4}")
+#       else:
+#          print(f"el valor del subsidio de arriendo es ${total2}")
+# else:
+#   e=int(input("ingrese su condición laboral (1.-empleado 2.-desempleado): "))
+#   if e==1:
+#      print(f"el valor del subsidio de arriendo es ${sdae2}")
+#   else:
+#      print(f"el valor del subsidio de arriendo es ${sdad2}")
+#   ed3=int(input("ingrese su edad: "))
+#   if ed3>65:
+#        print(f"por ser mayor de 65 años usted recibe ${edad} extra")
+#   else:
+#        print(f"por ser menor de 65 años no recibe dinero extra")
 
+# ## Domingo de pascua ####
+# Preguntar la Cantidad de niños de niños que buscan huevitos de chocolates
+# Cuando se termine la busqueda , preguntar cantos huevos encontró cada uno
+# y clasificarlos de la siguiente forma
+# Menos de una docena : NOOB
+# Entre una docena a 24: Master
+# 25 huevos o mas :Legend
+# Mostrar resumen, y mostrar la mayor cantidad de huevitos encontrados por un solo niño
 
+noob=0
+master=0
+legend=0
+top=0
+import random
 
+cantniños=int(input("cuantos niños van a buscar huevitos: "))
 
-        
-    
+for c in range (cantniños):
+    canthuevos=random.randint(5,30)
+    if canthuevos>top:
+        top=canthuevos
+    if canthuevos<12:
+        noob+=1
+    elif canthuevos>=12 and canthuevos<=24:
+        master+=1
+    else:
+        canthuevos>=25
+        legend+=1
 
-
-
-
-
-        
-      
+print(f'''
+      la cantidad de noob es {noob}
+      la cantidad de master es {master}
+      la cantidad de legend es {legend}
+      la mayor cantidad de huevitos encontrados es {top}
+      ''')

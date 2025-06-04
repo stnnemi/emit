@@ -1,3 +1,9 @@
+#pide un numero al usuario y muestra esa cant de repeticiones
+
+# num=int(input("Ingrese un numero: ")) 
+# for i in range(num):
+#     print("Repeticion", i+1)
+#-----------------------------------------------------------------------------
 # alumnos=int(input("Ingrese la cantidad de alumnos: "))
 
 # prom=0

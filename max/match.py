@@ -49,56 +49,83 @@
 #----------------------------------------------------------------------------------
 
 #Ejercicio menú sushi
-# total=0
-# cantfrito=0
-# cantfrio=0
-# cantpromo=0
-# cantjunaeb=0
-# print("Bienvenido a Sushi Rock")
-# while True:
-#     try:
-#         resp=int(input('''
-#         ¿Qué desea llevar? Seleccione su requerimiento solo con números enteros
-#         1.- Rolls frito $5.000
-#         2.- Rolls frío $5.000
-#         3.- Promo 50 piezas $10.000
-#         4.- Menú junaeb $4.000
-#         5.- Salir
-#         '''))
-#         match resp:
-#             case 1:
-#                 print("has seleccionado Rolls frito")
-#                 total+=5000
-#                 cantfrito+=1
-#             case 2:
-#                 print("has seleccionado Rolls frío")
-#                 total+=5000
-#                 cantfrio+=1
-#             case 3:
-#                 print("has seleccionado Promo 50 piezas")
-#                 total+=10000
-#                 cantpromo+=1
-#             case 4:
-#                 print("has seleccionado Menú junaeb")
-#                 total+=4000
-#                 cantjunaeb+=1
-#             case 5:
-#                 print ("finalizando la compra")
-#                 break
-#             case _:
-#                 print("opción incorrecta, intente nuevamente")
-#     except Exception:
-#         print ("error, ingrese su respuesta con números enteros")
-        
-# print(f'''
-#       Su pedido sería:
-#       {cantfrito} Rolls fritos
-#       {cantfrio} Rolls fríos
-#       {cantpromo} Promo 50 piezas
-#       {cantjunaeb} Menú junaeb
-#       ------------------------------------
-#       El total de su pedido es de ${total}
-#       ''')
+total=0
+cantfrito=0
+cantfrio=0
+cantpromo=0
+cantjunaeb=0
+print("Bienvenido a Sushi Rock")
+while True:
+    try:
+        resp=int(input('''
+        ¿Qué desea llevar? Seleccione su requerimiento solo con números enteros
+        1.- Rolls frito $5.000
+        2.- Rolls frío $5.000
+        3.- Promo 50 piezas $10.000
+        4.- Menú junaeb $4.000
+        5.- Salir
+        '''))
+        match resp:
+            case 1:
+                print("has seleccionado Rolls frito")
+                total+=5000
+                cantfrito+=1
+            case 2:
+                print("has seleccionado Rolls frío")
+                total+=5000
+                cantfrio+=1
+            case 3:
+                print("has seleccionado Promo 50 piezas")
+                total+=10000
+                cantpromo+=1
+            case 4:
+                print("has seleccionado Menú junaeb")
+                total+=4000
+                cantjunaeb+=1
+            case 5:
+                print ("finalizando la compra")
+                break
+            case _:
+                print("opción incorrecta, intente nuevamente")
+    except Exception:
+        print ("error, ingrese su respuesta con números enteros")    
+while True:
+    cupon=input("tiene un cupon de si/no/salir: ") 
+    if cupon=="si":
+        respcupon=input("ingrese su cupón: ")
+        if respcupon=="soyotaku":
+            dcto=total*0.1
+            preciofinal=total-dcto
+            totaldcto=preciofinal-dcto
+            print(f'''
+                Su pedido sería:
+                {cantfrito} Rolls fritos
+                {cantfrio} Rolls fríos
+                {cantpromo} Promo 50 piezas
+                {cantjunaeb} Menú junaeb
+                ------------------------------------
+                Subtotal: ${total}
+                Descuento por código: ${totaldcto}
+                TOTAL: ${preciofinal}
+                ''')
+            break
+        else:
+            print("código no válido")
+    elif cupon=="no" or cupon=="salir":
+        print(f'''
+        ****************************** 
+        TOTAL PRODUCTOS:
+        ****************************** 
+        {cantfrito} Rolls fritos
+        {cantfrio} Rolls fríos
+        {cantpromo} Promo 50 piezas
+        {cantjunaeb} Menú junaeb
+        ****************************** 
+        El total de su pedido es de ${total}
+        ''')
+        break
+    else:
+        print("error, escriba una de las 3 opciones")
 
 #----------------------------------------------------------------------------------
 
@@ -471,3 +498,5 @@
 # Al final, mostrar cuántos de cada producto compró y el total con descuento si aplica.
 
 #----------------------------------------------------------------------------------
+
+

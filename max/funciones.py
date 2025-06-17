@@ -51,42 +51,42 @@
 #4.-mostrar listado de articulos
 #5.-salir
 
-productos=[
-    {"nombre":"lapiz", "precio":400},
-    {"nombre":"goma", "precio":300},
-    {"nombre":"estuche", "precio":1600}
-]
+# productos=[
+#     {"nombre":"lapiz", "precio":400},
+#     {"nombre":"goma", "precio":300},
+#     {"nombre":"estuche", "precio":1600}
+# ]
 
-# print(productos)
+# # print(productos)
 
-# for item in productos:
-#     print(f"el articulo {item["nombre"]} tiene un precio de {item["productos"]}")
+# # for item in productos:
+# #     print(f"el articulo {item["nombre"]} tiene un precio de {item["productos"]}")
 
-while True:
-        resp=int(input('''
-1.-agregar articulo
-2.-borrar articulo
-3.-actualizar articulo
-4.-mostrar listado de articulos
-5.-salir
-                       '''))
-        match resp:
-            case 1:
-                agregar=input("ingrese articulo para agregar: ")
-                precio=int(input("ingrese el precio: "))
-                productos.append({"agregar":agregar, "precio":precio})
-            case 2:
-                for i, producto in enumerate (productos):
-                        print(i+1, ".-", producto)
-                        borrar=input("ingrese un articulo a borrar: ")
-                        productos.pop(borrar-1)
-            case 3:
-                actualizar=input("ingrese articulo a actualizar: ")
-            case 4:
-                for n, producto in enumerate(productos):
-                    print(n+1, producto["nombre"], producto["precio"])
-            case 5:
-                print("saliendo...")
-                break
-            case _:
-                print("error, ingrese una opción válida")
+# while True:
+#         resp=int(input('''
+# 1.-agregar articulo
+# 2.-borrar articulo
+# 3.-actualizar articulo
+# 4.-mostrar listado de articulos
+# 5.-salir
+#                        '''))
+#         match resp:
+#             case 1:
+#                 agregar=input("ingrese articulo para agregar: ")
+#                 precio=int(input("ingrese el precio: "))
+#                 productos.append({"agregar":agregar, "precio":precio})
+#             case 2:
+#                 for i, producto in enumerate (productos):
+#                         print(i+1, ".-", producto)
+#                         borrar=input("ingrese un articulo a borrar: ")
+#                         productos.pop(borrar-1)
+#             case 3:
+#                 actualizar=input("ingrese articulo a actualizar: ")
+#             case 4:
+#                 for n, producto in enumerate(productos):
+#                     print(n+1, producto["nombre"], producto["precio"])
+#             case 5:
+#                 print("saliendo...")
+#                 break
+#             case _:
+#                 print("error, ingrese una opción válida")
